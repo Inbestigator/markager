@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Bookmark Manager",
+    "name": "Markager",
     "version": "1.5",
     "description": "Load, save, and edit bookmarks across your devices.",
     "permissions": [
@@ -18,8 +18,5 @@
                 "content-script.js"
             ]
         }
-    ],
-    "action": {
-        "default_popup": "popup.html"
-    }
+    ]
 }

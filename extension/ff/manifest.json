@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Bookmark Manager",
-    "version": "1.5",
+    "name": "Markager",
+    "version": "1.6",
     "description": "Load, save, and edit bookmarks across your devices.",
     "permissions": [
         "bookmarks"
@@ -22,6 +22,11 @@
         }
     ],
     "action": {
-        "default_popup": "http://localhost:3000/dashboard"
+        "default_popup": "https://markager.vercel.app/dashboard"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "addon@markager.vercel.app"
+        }
     }
 }
