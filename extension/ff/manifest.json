@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Bookmark Manager",
+    "version": "1.5",
+    "description": "Load, save, and edit bookmarks across your devices.",
+    "permissions": [
+        "bookmarks"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "http://localhost:3000/dashboard"
+    }
+}
